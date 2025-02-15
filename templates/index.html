@@ -1,0 +1,21 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<h1 class="text-center ">Welcome to list app</h1>
+{% if messages %}
+    {% for message in messages %}
+        <p class="text-center custom">{{ message }}</p>
+    {% endfor %}
+
+{% endif %}
+<div class="text-center mt-5 ">
+<h3>New here?</h3>
+<a href="{% url 'login' %}" class="btn btn-info">Login</a>
+<h3>Already have an account? </h3>
+<a href="{% url 'register' %}" class= "btn btn-primary">Register</a>
+</div>
+
+
+
+{% endblock %}

@@ -1,0 +1,40 @@
+body{
+    background-image: url(/static/img/list.avif);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed; 
+}
+
+table{
+    margin-top: 20px;
+    width: 90%;
+    border: 2px solid black;
+    table-layout: fixed;
+  }
+  th, td {
+    border: 2px solid black;
+      padding: 10px;
+      text-align: left;
+      white-space: nowrap;
+      overflow: hidden;
+      
+  }
+  th:nth-child(1), td:nth-child(1) { width: 5% } 
+  th:nth-child(2), td:nth-child(2){width: 15%;}
+  th:nth-child(3), td:nth-child(3){width: 25%;}
+  th:nth-child(4), td:nth-child(4){width: 15%;}
+  th:nth-child(5), td:nth-child(5){width: 10%;}
+
+  .description{
+      overflow-x: auto;
+
+
+  }
+
+.custom{
+    font-size: 20px;
+}
+.custom2{
+    background-color: rgb(107, 50, 160);
+}
